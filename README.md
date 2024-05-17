@@ -5,4 +5,5 @@ J'ai commencé par créer une machine virtuelle avec le code terraform. La VM à
 Pour la partie installation de semaphore, j'ai utilisé un playbook ansible dans lequel il y a : 
 - l'installation de semaphore
 - l'installation de snapd pour l'installation de semaphore
-- l'installation de bolt
+
+Par la suite je suis pas aller plus loin, j'ai eu trop d'erreur pour finir. Le playbook fait l'installation de semaphore.
