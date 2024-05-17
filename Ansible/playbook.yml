@@ -22,5 +22,5 @@
 
     - name: Install Bolt
       apt:
-        name: puppet-bolt
+        name: bolt
         state: present
