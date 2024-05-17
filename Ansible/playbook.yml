@@ -20,6 +20,12 @@
     - name: Install Semaphore
       command: sudo snap install semaphore
 
+    - name: demarrage du service semaphore
+      systemd:
+        name: semaphore
+        state: started
+        enabled: yes
+
     - name: Install Bolt
       apt:
         name: bolt
