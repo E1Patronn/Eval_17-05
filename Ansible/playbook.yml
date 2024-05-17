@@ -19,3 +19,8 @@
 
     - name: Install Semaphore
       command: sudo snap install semaphore
+
+    - name: Install Bolt
+      apt:
+        name: puppet-bolt
+        state: present
