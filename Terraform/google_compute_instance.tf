@@ -4,7 +4,7 @@ resource "google_compute_instance" "default" {
   machine_type = "e2-micro"
   zone         = "europe-west1-c"
   allow_stopping_for_update = true
-  tags         = ["demo-vm-instance"]
+  tags         = ["terraform-2"]
 
   boot_disk {
     initialize_params {
@@ -43,7 +43,7 @@ resource "google_compute_instance" "default_2" {
     zone         = "europe-west1-c"
     project = google_project.my_project.project_id
     allow_stopping_for_update = true
-    tags         = ["demo-vm-instance"]
+    tags         = ["terraform-2"]
 
     boot_disk {
       initialize_params {
