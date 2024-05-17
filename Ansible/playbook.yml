@@ -10,7 +10,12 @@
       apt:
         name: snapd
         state: present
-
+        
+    - name: demarrage du service Snapd
+      systemd:
+        name: snapd
+        state: started
+        enabled: yes
 
     - name: Install Semaphore
       command: sudo snap install semaphore
